@@ -6,21 +6,24 @@ public class DeadBehaviour : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    public bool canBeDrag;
+    public bool canBeDrag = false;
     Vector3 playerPosition;
     [SerializeField]
     private float dragSpeed = 5f;
 
     private void Start()
     {
-        //canBeDrag = false;
+        canBeDrag = false;
     }
     private void FixedUpdate()
     {
         if (canBeDrag)
         {
-            Vector2 playerDirection = (playerPosition - transform.position).normalized;
-            rb.velocity = new Vector2(playerDirection.x, playerDirection.y) * dragSpeed;
+            Debug.Log("entra");
+            //transform.position = playerPosition + offset;
+            Vector2 targetDirection = (playerPosition - transform.position).normalized;
+            rb.velocity = new Vector2(targetDirection.x, targetDirection.y) * dragSpeed;
+            //transform.position = playerPosition + offset;
         }
     }
 
@@ -28,5 +31,6 @@ public class DeadBehaviour : MonoBehaviour
     {
         playerPosition = position;
         canBeDrag = true;
+        //offset = transform.position - playerPosition;
     }
 }

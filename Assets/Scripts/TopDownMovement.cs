@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class TopDownMovement : MonoBehaviour
 {
+    public enum States
+    {
+        Normal,
+        Caught
+    };
+
+    public States states;
+
     public float moveSpeed;
     private Rigidbody2D rb2d;
     private Vector2 moveInput;
@@ -12,21 +20,13 @@ public class TopDownMovement : MonoBehaviour
     private int RunMultiplier;
 
     private bool canKill;
-    private bool canDrag;
-    [SerializeField]
-    private GameObject DraggerPrefab;
-    [SerializeField]
-    private GameObject NPCAlive;
-    [SerializeField]
-    private GameObject DeadBodyPrefab;
+    private bool isKilling;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         canKill = false;
-        canDrag = false;
+        states = States.Normal;
     }
 
     // Update is called once per frame
@@ -47,22 +47,17 @@ public class TopDownMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && canKill)
         {
             Debug.Log("Lo matas");
-            KillNPC();
+            isKilling = true;
         }
         else if (Input.GetMouseButtonDown(0))
             Debug.Log("No lo puedes matar");
-
-        if (Input.GetMouseButtonDown(1) && canDrag)
-            DraggerPrefab.SetActive(true);
-        else if (Input.GetMouseButtonUp(1))
-            DraggerPrefab.SetActive(false);
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("DeadBody"))
+        if (collision.gameObject.CompareTag("NPCAlive") && isKilling)
         {
-            Debug.Log("Activar Dragger");
-            canDrag = true;
+            collision.gameObject.GetComponent<NPCBehaviour>().KillNPC();
         }
     }
 
@@ -82,17 +77,23 @@ public class TopDownMovement : MonoBehaviour
         {
             Debug.Log("No puede matar");
             canKill = false;
-        }
-        if (collision.gameObject.CompareTag("DeadBody"))
-        {
-            Debug.Log("Activar Dragger");
-            canDrag = false;
+            isKilling = false;
         }
     }
 
-    private void KillNPC()
+    public void ToggleStateScared()
     {
-        Instantiate(DeadBodyPrefab, NPCAlive.transform.position, Quaternion.identity);
-        Destroy(NPCAlive);
+        if (states == States.Normal)
+        {
+            states = States.Caught;
+        }
+    }
+
+    public void ToggleStateNormal()
+    {
+        if (states == States.Caught)
+        {
+            states = States.Normal;
+        }
     }
 }

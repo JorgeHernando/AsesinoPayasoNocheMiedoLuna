@@ -8,6 +8,8 @@ TagManager:
   - NPCAlive
   - NPCChecking
   - DetectionZone
+  - Enemy
+  - Potion
   layers:
   - Default
   - TransparentFX

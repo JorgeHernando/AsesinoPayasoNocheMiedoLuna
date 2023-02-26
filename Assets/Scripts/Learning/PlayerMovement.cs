@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         estaVivo = true;
-        vida = 2;
+        vida = 1;
         rb2D = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
     }
@@ -33,8 +33,11 @@ public class PlayerMovement : MonoBehaviour
 
         moveInput.Normalize();
 
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
-            rb2D.velocity = moveInput * 2;
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            rb2D.velocity = moveInput * 3;
+        if (Input.GetKey(KeyCode.W))
+            rb2D.velocity = moveInput * 3;
+
         ChequearVida();
     }
 

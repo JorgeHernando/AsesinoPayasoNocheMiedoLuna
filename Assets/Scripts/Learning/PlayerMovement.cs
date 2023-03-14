@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementt : MonoBehaviour
 {
     //int = cuando quieres hacer una acción sin ser preciso
     //float = cuando quieres hacer una acción precisa

@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class Salto : MonoBehaviour
 {
+
     Rigidbody2D rb2d;
     public float saltoDistancia;
     private float direction;
     public float speed;
-    public GameObject bola;
     private bool enElaire;
+    #region ModoPro
     RaycastHit2D hit;
     public Vector3 v3;
     public LayerMask layer;
     public float distance;
+    #endregion
     // Start is called before the first frame update
     void Start()
     {

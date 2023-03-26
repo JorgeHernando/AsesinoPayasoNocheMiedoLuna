@@ -29,7 +29,7 @@ public class Salto : MonoBehaviour
     void Update()
     {
         Detector_Plataforma();
-        enElaire = bola.gameObject.GetComponent<AnalizarSuelo>().suelo;
+        //enElaire = bola.gameObject.GetComponent<AnalizarSuelo>().suelo;
         if (Input.GetKeyDown("space") && enElaire == true)
         {
             Debug.Log(saltoDistancia);

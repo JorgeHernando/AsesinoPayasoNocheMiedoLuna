@@ -17,6 +17,7 @@ public class NPCBehaviour : MonoBehaviour
     {
         characterPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<TopDownMovement>();
     }
+
     // Start is called before the first frame update
     void Start()
     {

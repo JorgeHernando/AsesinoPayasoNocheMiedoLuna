@@ -7,7 +7,7 @@ public class NPCVision : MonoBehaviour
 {
     public GameObject feeling;
     public float delay;
-    [SerializeField] string _nextScene;
+    string _nextScene = "LoseScene";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,15 +15,15 @@ public class NPCVision : MonoBehaviour
         {
             feeling.gameObject.SetActive(true);
             Debug.Log("Ha visto cuerpo");
-            SceneManager.LoadScene("LoseScene");
-            //LoadNextScene("LoseScene");
+            SceneManager.LoadScene(_nextScene);
+            //LoadNextScene(_nextScene);
         }
     }
 
     private IEnumerator LoadNextScene(string levelName)
     {
         yield return new WaitForSeconds(delay);
-            Debug.Log("Cambia nivel");
+        Debug.Log("Cambia nivel");
         SceneManager.LoadScene(levelName);
     }
 }

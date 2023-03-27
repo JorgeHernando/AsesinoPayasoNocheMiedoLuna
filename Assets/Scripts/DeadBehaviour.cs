@@ -33,4 +33,9 @@ public class DeadBehaviour : MonoBehaviour
         canBeDrag = true;
         //offset = transform.position - playerPosition;
     }
+
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
 }

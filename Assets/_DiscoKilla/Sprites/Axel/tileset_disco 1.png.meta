@@ -798,7 +798,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tileset_disco 1_5: -834199854
+      tileset_disco 1_23: -1639546195
       tileset_disco 1_2: -228776708
       tileset_disco 1_26: -832826410
       tileset_disco 1_19: 1006134081
@@ -825,10 +825,10 @@ TextureImporter:
       tileset_disco 1_10: 924359080
       tileset_disco 1_8: -656665875
       tileset_disco 1_30: 1267637336
-      tileset_disco 1_15: 660405966
-      tileset_disco 1_23: -1639546195
-      tileset_disco 1_16: -141127904
       tileset_disco 1_3: 2024527766
+      tileset_disco 1_5: -834199854
+      tileset_disco 1_16: -141127904
+      tileset_disco 1_15: 660405966
       tileset_disco 1_22: -1954275960
   spritePackingTag: 
   pSDRemoveMatte: 0

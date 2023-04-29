@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5881dee1eae28c64b8df6267dfdf1d64
+guid: e6cb0a66fc024da48b7954788acbc2c8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,222 +116,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Halloween_0
+      name: BlackWall_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 565
-        width: 52
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 320a6b5968bbc884e9acc265d5e0fd1c
-      internalID: 115712874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_1
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 555
-        width: 46
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 073c04d3fd42b3c44b11eddb24833d21
-      internalID: -983487639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_2
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 479
+        x: 0
+        y: 160
         width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4336e37644314c4c89bb293ea809dcc
-      internalID: -324121721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_3
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 491
-        width: 46
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f22272380ffeda45beb0bc4a98ad36c
-      internalID: -1999831851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_4
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 481
-        width: 92
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19e0a732ba2005246965fe810bb6b9db
-      internalID: -1879148808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_5
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 501
-        width: 50
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 118eaa4cd8306034fba58ca1cc401497
-      internalID: -1899250385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_6
-      rect:
-        serializedVersion: 2
-        x: 358
-        y: 501
-        width: 56
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12d0cf31f6dc99f4888ec50e06f29476
-      internalID: 643128266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_7
-      rect:
-        serializedVersion: 2
-        x: 422
-        y: 501
-        width: 56
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac28b0a032034ef40aaec904e2925d2d
-      internalID: -1097866809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_8
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 435
-        width: 38
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a723176644f188f4884e855166603168
-      internalID: 1385365144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_9
-      rect:
-        serializedVersion: 2
-        x: 334
-        y: 431
-        width: 128
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a59541e1e2eee4c4a9801d61847c60b5
-      internalID: 44034134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_10
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 395
-        width: 42
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -340,19 +130,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73517ede9e4f6c54b99ea37801e9e617
-      internalID: -2011690051
+      spriteID: 130bd76651df45d4194b077aedd0537d
+      internalID: -1795630373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_11
+      name: BlackWall_1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 395
-        width: 40
+        x: 32
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -361,20 +151,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f48424c57c2e6234792e7df3ec7029d0
-      internalID: -2140460855
+      spriteID: a0c0461f0e5e317488dd9f2b05a68306
+      internalID: -1945392486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_12
+      name: BlackWall_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a8118981fb25c43bc3eec8500329a3
+      internalID: -2112233163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f41be0ae715b3743a0c3959ff859e75
+      internalID: 2134418291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 395
+        y: 160
         width: 32
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,20 +214,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6aa4843b392e264a805a245623e1e98
-      internalID: -256678847
+      spriteID: 22b6c2e1734cc1e4db22e26fc3d0f943
+      internalID: 2051237688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_13
+      name: BlackWall_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701d850379ad850418bd8170ddd8586a
+      internalID: 802204900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_6
       rect:
         serializedVersion: 2
         x: 192
-        y: 395
+        y: 160
         width: 32
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef6f65b7ec81be349879c734f574e4e7
-      internalID: 601067858
+      spriteID: 62a45e529d394804793347ca8eafd377
+      internalID: 1837194948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_14
+      name: BlackWall_7
       rect:
         serializedVersion: 2
-        x: 226
-        y: 401
-        width: 28
-        height: 16
+        x: 224
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,20 +277,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 432f6d9356cc64c4c88ac7a131f2b126
-      internalID: -279283874
+      spriteID: 9af9255c50f57dc4ca27c0325f846ec3
+      internalID: 628772025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_16
+      name: BlackWall_8
       rect:
         serializedVersion: 2
-        x: 260
-        y: 399
-        width: 28
-        height: 18
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -445,20 +298,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c807f9f652136ed42b4cd00b443ba943
-      internalID: 1088193071
+      spriteID: 96777f0936ee5994aae0cf03e88dab29
+      internalID: 99905546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_18
+      name: BlackWall_9
       rect:
         serializedVersion: 2
-        x: 292
-        y: 397
-        width: 22
-        height: 24
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -466,20 +319,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf00d06ff2f628a46b25caa6e216b73c
-      internalID: 2102799443
+      spriteID: cd03cbab91dd8a34088178d993730951
+      internalID: 149310276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_19
+      name: BlackWall_10
       rect:
         serializedVersion: 2
-        x: 26
-        y: 319
-        width: 76
-        height: 74
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -487,20 +340,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1642235913b069f439353ad447a0bc7d
-      internalID: -245177401
+      spriteID: bc4ae0ddbbaacb24fa76ea5bb7442cf7
+      internalID: -1723822028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_20
+      name: BlackWall_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5304a7385c93c5479786fb18dd7a8e7
+      internalID: -428172017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_12
       rect:
         serializedVersion: 2
         x: 128
-        y: 319
+        y: 128
         width: 32
-        height: 74
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -508,41 +382,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f5be00a9c696fc4ebbdd711ad86cea5
-      internalID: -1058824190
+      spriteID: f3d096c9651784e478726bf30c3b1c7f
+      internalID: 1959915950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_21
+      name: BlackWall_13
       rect:
         serializedVersion: 2
-        x: 186
-        y: 351
-        width: 44
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a6ef03d193d2d04f8c6dbb5af70f40a
-      internalID: 1824574853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_22
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 351
+        x: 160
+        y: 128
         width: 32
-        height: 42
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,545 +403,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a456f858efd7a264f94d524fba46ddf1
-      internalID: -1834010020
+      spriteID: 88a29ce53eb233945b23b6b2f2a2d13c
+      internalID: 802477149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_23
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 355
-        width: 14
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a789b225636c9949b4bfaa748da1b53
-      internalID: 1836644525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_24
-      rect:
-        serializedVersion: 2
-        x: 380
-        y: 369
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fce1ff2fff9571b4690cdcee4c9b91d3
-      internalID: 1556209238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_25
-      rect:
-        serializedVersion: 2
-        x: 460
-        y: 307
-        width: 44
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 053e1731069bf134b841ea83197f16dc
-      internalID: 1611144686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_26
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 195
-        width: 90
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 218993b2c683d5f42a21168a8a9bcde9
-      internalID: -1449960748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_28
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 195
-        width: 90
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ef300aec6fce004d97ed15b8bde077a
-      internalID: -1442631610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_33
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 247
-        width: 26
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a1e857137307a94399f86b1d46d34d6
-      internalID: -1191729580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_34
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 247
-        width: 26
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40a0cf49c48065644b9644fc06c78128
-      internalID: -348275236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_35
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 247
-        width: 26
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3dfbe5cd957140f41bebb7eae74a96c8
-      internalID: -1041055483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_43
-      rect:
-        serializedVersion: 2
-        x: 234
-        y: 195
-        width: 90
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62c62731efe6add488b091f530739c52
-      internalID: 640438395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_44
-      rect:
-        serializedVersion: 2
-        x: 347
-        y: 207
-        width: 14
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d03ee5e926c07a4f8babbc4d3078c4e
-      internalID: -1609510007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_45
-      rect:
-        serializedVersion: 2
-        x: 397
-        y: 207
-        width: 14
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36a2ab255567de645b9077d8f928beb3
-      internalID: -789763700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_46
-      rect:
-        serializedVersion: 2
-        x: 464
-        y: 194
-        width: 28
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7d3697910bdaf14aaeb735145ac6517
-      internalID: 458324301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_48
-      rect:
-        serializedVersion: 2
-        x: 262
-        y: 101
-        width: 46
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45755c5e6f9fc54478cf41ad94291906
-      internalID: -1538229024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_49
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 101
-        width: 46
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b3c6975713df1f4e8e897d3b9c87fa1
-      internalID: 523380240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_50
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 175
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ae1bf7b84af35041af6ba5697abc76e
-      internalID: -660205731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_51
-      rect:
-        serializedVersion: 2
-        x: 468
-        y: 162
-        width: 20
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03182855217f7844d8f72f6602fb264e
-      internalID: -288923733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_52
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 93
-        width: 44
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c6f262edaf06034bbe3fc13b2f02e55
-      internalID: 2138220302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_53
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 93
-        width: 44
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36401a9fbcf9ff44c8c096f88d4eac5c
-      internalID: 1822726088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_54
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 91
-        width: 68
-        height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66d01360b8ef76042be5efd10bd6faab
-      internalID: 1891639047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_55
-      rect:
-        serializedVersion: 2
-        x: 390
-        y: 101
-        width: 42
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 385d2ebe73a68bf4080386c22750ab66
-      internalID: -513183902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_56
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 59
-        width: 34
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3dbcf24f06fc30248a06fdf37b6b9ae0
-      internalID: 1292492880
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_57
+      name: BlackWall_14
       rect:
         serializedVersion: 2
         x: 192
-        y: 51
-        width: 36
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 630660dd75e3ef14587a22a6a0da2ead
-      internalID: -1334976870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_58
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 67
-        width: 22
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2aae1c346419ac543979e7ddd86cca50
-      internalID: 261402206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_59
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 75
-        width: 22
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa2c62b47d6227a408a480ea6990db70
-      internalID: -2077423678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_60
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 77
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 045abbfb599d63c4a9dfb6d605b8d454
-      internalID: 947317663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Halloween_61
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 35
+        y: 128
         width: 32
-        height: 46
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1096,20 +424,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37d87528aa8e5ce4198e2374814f6535
-      internalID: -1362447056
+      spriteID: 19c56e1b8bc647a4baf9eeaa07c6f482
+      internalID: -72287502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_62
+      name: BlackWall_15
       rect:
         serializedVersion: 2
-        x: 244
-        y: 49
-        width: 28
-        height: 28
+        x: 224
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1117,20 +445,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ada7639213af694ca5e66a771620050
-      internalID: -723004679
+      spriteID: 148b0a0710f3c9940b4d18feb7c11048
+      internalID: -1229708153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Halloween_63
+      name: BlackWall_16
       rect:
         serializedVersion: 2
-        x: 296
-        y: 67
-        width: 8
-        height: 6
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1138,8 +466,659 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c96d027b44393428121993c07a1a98
-      internalID: -405365754
+      spriteID: b2636fbc62adf934d98ad3bd1bd184bf
+      internalID: 1258307705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08e7df1356e01b41908f885a27766ff
+      internalID: 1050991795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3292f599f0d280d4b999dcc77fcd904a
+      internalID: -109649952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d53009be796e84c9d7946a632e5616
+      internalID: -1048684651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3856d83b4d3d04ba1e230a3a63eb48
+      internalID: -1397846029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd24bdd853d3a143a5b422a65cf5033
+      internalID: -1097501743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278e048d0f58a4840a0e418d5c6cf78c
+      internalID: 1726115823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d560c717cfb9b764c9c04bfc980dcf48
+      internalID: -1465744784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e32cf34d5a085347b2e9eddf6285ab1
+      internalID: 881358094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c990a3bf7dd1244c831bf7d87fe881a
+      internalID: -1739686848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa40d9722a9082d4eb86b69038c74782
+      internalID: -1435378651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f32eb3388dd3c49b0a7fb083ac03ac
+      internalID: 747911950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f874ec615e18a4f9238b16bb46aa2b
+      internalID: 381201799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d516061a67c296545a604e4f9fae1862
+      internalID: -1996882665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454125a6e80a3ed40bdba4e8b6fb2dcf
+      internalID: -1280903647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce1ecc8d073fbd44a98e21e55aa1719
+      internalID: -26988046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ee912170ae03445a95595676389d54
+      internalID: -2132500119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919efd6c9cb35294aba4bae24636c825
+      internalID: 1925190026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212f170a7d624b548a7e6e7c264a9c4e
+      internalID: 1610097055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0066a209eeb4fd744bc94fc8a951cc1a
+      internalID: -1542314848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835c6fabcdbd6df4391fd2df15783d5d
+      internalID: -1283440982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971a07f356bb0544793783e0cac71dd4
+      internalID: -702119609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb39ac6ceebc15d44b4665369a59cdf5
+      internalID: -560599168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a35f1f0f516e1d40969b1f18ad780ac
+      internalID: -820500433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0a0c59befbd1e458d83f548ba81266
+      internalID: 519637977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff7d3325e75f434db3d4c01dedbf351
+      internalID: 1108334771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286c8fe2521754c4593fb402fc4f7720
+      internalID: 478369441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd27952b99ac33439b3215f251e1f96
+      internalID: -1069610332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66dbcdc8c6e3134abcaade0eadc45ed
+      internalID: 1578283688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf16eef76c225a46abf92032d0ad404
+      internalID: -25228615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3829605e6cd124d98ac5f033c7b7e4
+      internalID: -1516646194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackWall_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3473e68b6f9dfe4887984322efd78f5
+      internalID: -1979924738
       vertices: []
       indices: 
       edges: []
@@ -1155,70 +1134,54 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Halloween_7: -1097866809
-      Halloween_1: -983487639
-      Halloween_57: -1334976870
-      Halloween_40: 1339525817
-      Halloween_37: -1480152253
-      Halloween_29: -1507475844
-      Halloween_31: 990836253
-      Halloween_38: -1676930869
-      Halloween_60: 947317663
-      Halloween_9: 44034134
-      Halloween_24: 1556209238
-      Halloween_47: 1135274254
-      Halloween_50: -660205731
-      Halloween_19: -245177401
-      Halloween_54: 1891639047
-      Halloween_58: 261402206
-      Halloween_61: -1362447056
-      Halloween_8: 1385365144
-      Halloween_48: -1538229024
-      Halloween_35: -1041055483
-      Halloween_10: -2011690051
-      Halloween_41: -576697242
-      Halloween_42: 1496607273
-      Halloween_44: -1609510007
-      Halloween_46: 458324301
-      Halloween_20: -1058824190
-      Halloween_49: 523380240
-      Halloween_63: -405365754
-      Halloween_62: -723004679
-      Halloween_32: 137343200
-      Halloween_13: 601067858
-      Halloween_0: 115712874
-      Halloween_11: -2140460855
-      Halloween_27: -448000285
-      Halloween_4: -1879148808
-      Halloween_15: 1724367179
-      Halloween_52: 2138220302
-      Halloween_30: -2065232363
-      Halloween_39: -491115490
-      Halloween_43: 640438395
-      Halloween_26: -1449960748
-      Halloween_53: 1822726088
-      Halloween_55: -513183902
-      Halloween_2: -324121721
-      Halloween_3: -1999831851
-      Halloween_17: 1836950140
-      Halloween_23: 1836644525
-      Halloween_45: -789763700
-      Halloween_6: 643128266
-      Halloween_18: 2102799443
-      Halloween_16: 1088193071
-      Halloween_22: -1834010020
-      Halloween_34: -348275236
-      Halloween_14: -279283874
-      Halloween_51: -288923733
-      Halloween_33: -1191729580
-      Halloween_25: 1611144686
-      Halloween_56: 1292492880
-      Halloween_59: -2077423678
-      Halloween_12: -256678847
-      Halloween_28: -1442631610
-      Halloween_36: -342365590
-      Halloween_5: -1899250385
-      Halloween_21: 1824574853
+      BlackWall_0: -1795630373
+      BlackWall_21: -1097501743
+      BlackWall_47: -1979924738
+      BlackWall_43: -1069610332
+      BlackWall_38: -560599168
+      BlackWall_28: 381201799
+      BlackWall_13: 802477149
+      BlackWall_16: 1258307705
+      BlackWall_3: 2134418291
+      BlackWall_8: 99905546
+      BlackWall_23: -1465744784
+      BlackWall_12: 1959915950
+      BlackWall_30: -1280903647
+      BlackWall_33: 1925190026
+      BlackWall_25: -1739686848
+      BlackWall_46: -1516646194
+      BlackWall_7: 628772025
+      BlackWall_24: 881358094
+      BlackWall_5: 802204900
+      BlackWall_32: -2132500119
+      BlackWall_9: 149310276
+      BlackWall_17: 1050991795
+      BlackWall_15: -1229708153
+      BlackWall_45: -25228615
+      BlackWall_26: -1435378651
+      BlackWall_42: 478369441
+      BlackWall_44: 1578283688
+      BlackWall_31: -26988046
+      BlackWall_40: 519637977
+      BlackWall_35: -1542314848
+      BlackWall_20: -1397846029
+      BlackWall_11: -428172017
+      BlackWall_14: -72287502
+      BlackWall_36: -1283440982
+      BlackWall_37: -702119609
+      BlackWall_34: 1610097055
+      BlackWall_4: 2051237688
+      BlackWall_19: -1048684651
+      BlackWall_41: 1108334771
+      BlackWall_6: 1837194948
+      BlackWall_29: -1996882665
+      BlackWall_22: 1726115823
+      BlackWall_2: -2112233163
+      BlackWall_1: -1945392486
+      BlackWall_18: -109649952
+      BlackWall_27: 747911950
+      BlackWall_10: -1723822028
+      BlackWall_39: -820500433
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

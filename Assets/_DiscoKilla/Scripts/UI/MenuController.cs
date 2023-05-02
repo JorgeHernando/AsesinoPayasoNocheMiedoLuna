@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    [SerializeField] private string levelName;
     [Space]
     [SerializeField] Animator animFade;
     [SerializeField] Animator startUp;
@@ -64,7 +65,7 @@ public class MenuController : MonoBehaviour
     }
     public void LoadFirstLevel()
     {
-        SceneManager.LoadScene("InGame");
+        SceneManager.LoadScene(levelName);
     }
 
     public void Exit()

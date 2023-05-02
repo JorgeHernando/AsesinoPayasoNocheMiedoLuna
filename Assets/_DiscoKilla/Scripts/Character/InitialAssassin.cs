@@ -2,16 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TopDownMovement : MonoBehaviour
+public class InitialAssassin : MonoBehaviour
 {
-    public enum States
-    {
-        Normal,
-        Caught
-    };
-
-    public States states;
-
     public float moveSpeed;
     private Rigidbody2D rb2d;
     private Vector2 moveInput;
@@ -23,17 +15,12 @@ public class TopDownMovement : MonoBehaviour
     [SerializeField]
     private int RunMultiplier;
 
-    private bool canKill;
-    private bool isKilling;
-
     private Animator animator;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        canKill = false;
-        states = States.Normal;
     }
 
     // Update is called once per frame
@@ -71,14 +58,6 @@ public class TopDownMovement : MonoBehaviour
         {
             animator.SetBool("isMoving", false);
         }
-
-        if (Input.GetMouseButtonDown(0) && canKill)
-        {
-            Debug.Log("Lo matas");
-            isKilling = true;
-        }
-        else if (Input.GetMouseButtonDown(0))
-            Debug.Log("No lo puedes matar");
     }
 
     private bool TryMove(Vector2 direction)
@@ -95,49 +74,5 @@ public class TopDownMovement : MonoBehaviour
             return true;
         }
         else return false;
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("NPCAlive") && isKilling)
-        {
-            collision.gameObject.GetComponent<NPCBehaviour>().KillNPC();
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("NPCAlive"))
-        {
-            Debug.Log("Puede matar");
-            canKill = true;
-            //other.gameObject.GetComponent<NPCBehaviour>().Death();
-        }
-    }
-    
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("NPCAlive"))
-        {
-            Debug.Log("No puede matar");
-            canKill = false;
-            isKilling = false;
-        }
-    }
-
-    public void ToggleStateScared()
-    {
-        if (states == States.Normal)
-        {
-            states = States.Caught;
-        }
-    }
-
-    public void ToggleStateNormal()
-    {
-        if (states == States.Caught)
-        {
-            states = States.Normal;
-        }
     }
 }

@@ -7,10 +7,24 @@ public class OpenDoor : MonoBehaviour
     [SerializeField]
     private Animator animator;
     private bool isOpen;
+    private AudioSource audioSource;
 
+    private DoorActions doorActions;
+
+    public bool isLevelChanger;
+    public int timeBeforeChangeScene;
     private void Start()
     {
         isOpen = false;
+        audioSource = GetComponent<AudioSource>();
+        doorActions = GetComponent<DoorActions>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        doorActions.PlayWhenOpen();
+        if (isLevelChanger == true)
+            doorActions.Invoke("ChangeSceneAfterOpening", timeBeforeChangeScene);
     }
 
     private void OnTriggerStay2D(Collider2D collision)

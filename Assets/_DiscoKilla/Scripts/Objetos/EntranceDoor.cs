@@ -19,12 +19,19 @@ public class EntranceDoor : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            hiddenWall.SetActive(false);
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             hiddenWall.SetActive(true);
-            trigger.SetActive(false);
         }
     }
 }

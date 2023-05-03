@@ -7,11 +7,16 @@ public class DoorActions : MonoBehaviour
 {
     [SerializeField]
     private AudioSource audioSource;
-    [SerializeField] private string levelName;
+    [SerializeField] private string? levelName;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
+        if (levelName == null)
+        {
+            levelName = "A";
+        }
     }
 
     public void PlayWhenOpen() 
@@ -21,6 +26,7 @@ public class DoorActions : MonoBehaviour
 
     public void ChangeSceneAfterOpening()
     {
-        SceneManager.LoadScene(levelName);
+        if (levelName != null)
+            SceneManager.LoadScene(levelName);
     }
 }

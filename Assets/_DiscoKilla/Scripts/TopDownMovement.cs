@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TopDownMovement : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class TopDownMovement : MonoBehaviour
     };
 
     public States states;
-
+    private int hidden;
     public float moveSpeed;
     private Rigidbody2D rb2d;
     private Vector2 moveInput;
@@ -27,6 +28,12 @@ public class TopDownMovement : MonoBehaviour
     private bool isKilling;
 
     private Animator animator;
+    [SerializeField] GameObject m_Object;
+    
+    private void Awake()
+    {
+
+    }
 
     void Start()
     {
@@ -75,6 +82,7 @@ public class TopDownMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && canKill)
         {
             Debug.Log("Lo matas");
+            m_Object.GetComponent<ScoreInformation>().scoring++;
             isKilling = true;
         }
         else if (Input.GetMouseButtonDown(0))
@@ -138,6 +146,40 @@ public class TopDownMovement : MonoBehaviour
         if (states == States.Caught)
         {
             states = States.Normal;
+        }
+    }
+
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
+
+    public bool IsDead()
+    {
+        return hidden <= 0;
+    }
+
+    public void Damage(EnemyHandler enemyHandler)
+    {
+    }
+
+    public void Damage(NPCBeta enemyHandler)
+    {
+        Damage(enemyHandler.GetPosition());
+    }
+
+    public void Damage(Vector3 attackerPosition)
+    {
+        Vector3 bloodDir = (GetPosition() - attackerPosition).normalized;
+        Blood_Handler.SpawnBlood(GetPosition(), bloodDir);
+        // Knockback
+        transform.position += bloodDir * 1.5f;
+        hidden--;
+        if (hidden == 0)
+        {
+            FlyingBody.Create(GameAssets.i.pfEnemyFlyingBody, GetPosition(), bloodDir);
+            gameObject.SetActive(false);
+            //transform.Find("Body").gameObject.SetActive(false);
         }
     }
 }

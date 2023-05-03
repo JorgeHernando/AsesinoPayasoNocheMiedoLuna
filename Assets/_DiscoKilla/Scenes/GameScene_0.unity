@@ -863,7 +863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2689912349455073744, guid: 2cace186ff489e2448d5ac296a7c11f8, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2689912349455073744, guid: 2cace186ff489e2448d5ac296a7c11f8, type: 3}
       propertyPath: m_Offset.x
@@ -10770,6 +10770,22 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   RunMultiplier: 4
+--- !u!70 &797164088
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166781387}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.05155748, y: 0.061803892}
+  m_Size: {x: 0.2375291, y: 0.51639247}
+  m_Direction: 0
 --- !u!1 &810253738
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,6 +36,7 @@ public class CoreNPC : MonoBehaviour
         animator = GetComponent<Animator>();
         previousPosition = transform.position;
         lastMoveDirection = Vector3.zero;
+
     }
 
     public int Health
@@ -62,7 +63,7 @@ public class CoreNPC : MonoBehaviour
             }
 
             health = value;
-            if (health <= 0) Defeated();                                        //calling defeated void if health value <= 0
+            if (health <= 0) Defeated(); 
         }
         get
         {

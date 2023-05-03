@@ -22,7 +22,8 @@ public class OpenDoor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        doorActions.PlayWhenOpen();
+        if (!isOpen)
+            doorActions.PlayWhenOpen();
         if (isLevelChanger == true)
             doorActions.Invoke("ChangeSceneAfterOpening", timeBeforeChangeScene);
     }

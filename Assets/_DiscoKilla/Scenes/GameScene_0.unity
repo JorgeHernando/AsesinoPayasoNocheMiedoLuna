@@ -863,7 +863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2689912349455073744, guid: 2cace186ff489e2448d5ac296a7c11f8, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2689912349455073744, guid: 2cace186ff489e2448d5ac296a7c11f8, type: 3}
       propertyPath: m_Offset.x
@@ -10777,7 +10777,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166781387}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -10904,6 +10904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e2c6459a4e04104a8f36161237bce22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Object: {fileID: 0}
+  totalNPC: 0
 --- !u!4 &840326104
 Transform:
   m_ObjectHideFlags: 0
@@ -11236,7 +11238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &904919369
 RectTransform:
   m_ObjectHideFlags: 0

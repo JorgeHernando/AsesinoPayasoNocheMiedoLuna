@@ -10,8 +10,7 @@ Material:
   m_Name: DiscoFloor
   m_Shader: {fileID: 4800000, guid: 167bb70ca0b9d054daedd91d22ee2f22, type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _PIXELCIRCLES_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -32,13 +31,13 @@ Material:
     m_Ints: []
     m_Floats:
     - PixelSnap: 0
-    - _CircleSize: 0.037472505
+    - _CircleSize: 0.16249198
     - _ColorChangeTime: -0.31
     - _Opacity: 1
-    - _PanSpeed: -0.28
-    - _PixelCircles: 1
+    - _PanSpeed: 0.001
+    - _PixelCircles: 0
     - _PixelSize: 13.63
-    - _RotateSpeed: -0.02
+    - _RotateSpeed: 0.37
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Tiling: {r: 10, g: 10, b: 0, a: 0}

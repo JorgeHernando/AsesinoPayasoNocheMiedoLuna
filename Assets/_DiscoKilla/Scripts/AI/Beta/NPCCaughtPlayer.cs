@@ -15,14 +15,22 @@ public class NPCCaughtPlayer : MonoBehaviour
     {
         feeling.gameObject.SetActive(true);
         Debug.Log("Ha visto cuerpo");
-        SceneManager.LoadScene(_nextScene);
+        //SceneManager.LoadScene(_nextScene);
+        //LoadNextScene(_nextScene);
+    }
+
+    public void StateCalm()
+    {
+        feeling.gameObject.SetActive(false);
+        Debug.Log("Ha visto cuerpo");
+        //SceneManager.LoadScene(_nextScene);
         //LoadNextScene(_nextScene);
     }
 
     public void GameOver()
     {
         Debug.Log("Caught");
-        animFade.SetTrigger("FadeIn");
+        animFade.SetTrigger("QuickFadeIn");
         Invoke("LoadGameOverLevel", delay);
     }
 

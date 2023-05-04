@@ -32,7 +32,7 @@ Material:
     m_Ints: []
     m_Floats:
     - PixelSnap: 0
-    - _CircleSize: 0.12667988
+    - _CircleSize: 0.0004988331
     - _ColorChangeTime: -0.31
     - _Opacity: 1
     - _PanSpeed: 0.02

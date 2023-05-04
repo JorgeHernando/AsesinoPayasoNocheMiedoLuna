@@ -55,6 +55,8 @@ public class NPCLineOfSight : MonoBehaviour
                 Debug.Log("NPC found a dead body!");
                 caughtPlayer.StateSuspicious();
             }
+            else
+                caughtPlayer.StateCalm();
             Debug.DrawLine(transform.position, collider.transform.position - transform.position, Color.red);
         }
     }

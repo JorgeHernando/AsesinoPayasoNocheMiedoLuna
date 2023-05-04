@@ -5,6 +5,10 @@ using TMPro;
 
 public class TopDownMovement : MonoBehaviour
 {
+    public static TopDownMovement Instance { get; private set; }
+    void OnEnable() { Instance = this; }
+    void OnDisable() { Instance = null; }
+
     public enum States
     {
         Normal,
@@ -29,11 +33,6 @@ public class TopDownMovement : MonoBehaviour
 
     private Animator animator;
     [SerializeField] GameObject m_Object;
-    
-    private void Awake()
-    {
-
-    }
 
     void Start()
     {
@@ -109,7 +108,7 @@ public class TopDownMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("NPCAlive") && isKilling)
         {
-            collision.gameObject.GetComponent<NPCBehaviour>().KillNPC();
+            collision.gameObject.GetComponent<NPCDies>().KillNPC();
         }
     }
 

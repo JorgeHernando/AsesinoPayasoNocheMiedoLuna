@@ -16,8 +16,11 @@ public class Score : MonoBehaviour
 
     public void Update()
     {
-        m_Object.text = activeNPC.Length.ToString();
+        activeNPC = GameObject.FindGameObjectsWithTag("NPCAlive");
 
+        m_Object.text = totalNPC.ToString();
+
+        Debug.Log("NPCsVivos:" + activeNPC.Length);
         if (activeNPC.Length == 0)
         {
             Victory();
@@ -26,7 +29,7 @@ public class Score : MonoBehaviour
 
     public void Victory()
     {
-        if (activeNPC.Length == 0)
+        if (activeNPC.Length <= 0)
         {
             SceneManager.LoadScene("WonScene");
         }

@@ -55,8 +55,11 @@ public class NPCLineOfSight : MonoBehaviour
                 Debug.Log("NPC found a dead body!");
                 caughtPlayer.StateSuspicious();
             }
-            else
+            else if (hit.collider != null && !hit.collider.CompareTag("DeadBody"))
+            {
+                hasSeenBody = true;
                 caughtPlayer.StateCalm();
+            }
             Debug.DrawLine(transform.position, collider.transform.position - transform.position, Color.red);
         }
     }

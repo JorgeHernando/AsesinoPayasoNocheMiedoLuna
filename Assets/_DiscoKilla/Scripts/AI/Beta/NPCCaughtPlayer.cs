@@ -10,11 +10,13 @@ public class NPCCaughtPlayer : MonoBehaviour
     [SerializeField] string _nextScene = "LoseScene";
 
     [SerializeField] Animator animFade;
+    [SerializeField] GameObject fakeVision;
 
     public void StateSuspicious()
     {
         feeling.gameObject.SetActive(true);
-        Debug.Log("Ha visto cuerpo");
+        fakeVision.SetActive(true);
+        //Debug.Log("Ha visto cuerpo");
         //SceneManager.LoadScene(_nextScene);
         //LoadNextScene(_nextScene);
     }
@@ -22,14 +24,15 @@ public class NPCCaughtPlayer : MonoBehaviour
     public void StateCalm()
     {
         feeling.gameObject.SetActive(false);
-        Debug.Log("Ha visto cuerpo");
+        fakeVision.SetActive(false);
+        //Debug.Log("De Chill");
         //SceneManager.LoadScene(_nextScene);
         //LoadNextScene(_nextScene);
     }
 
     public void GameOver()
     {
-        Debug.Log("Caught");
+        Debug.Log("Pilladisimo CRACK CRACK");
         animFade.SetTrigger("QuickFadeIn");
         Invoke("LoadGameOverLevel", delay);
     }

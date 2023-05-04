@@ -8,9 +8,14 @@ public class NPCDies : MonoBehaviour
     private GameObject DeadBodyPrefab;
     private Cinemachine.CinemachineImpulseSource _cameraShake;
 
-    public void KillNPC()
+    private void Start()
     {
         _cameraShake = GetComponent<Cinemachine.CinemachineImpulseSource>();
+    }
+
+    public void KillNPC()
+    {
+        _cameraShake.GenerateImpulse();
         Instantiate(DeadBodyPrefab, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }

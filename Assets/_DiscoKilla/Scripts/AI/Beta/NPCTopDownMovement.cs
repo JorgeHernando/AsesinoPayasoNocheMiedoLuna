@@ -12,6 +12,7 @@ public class NPCTopDownMovement : MonoBehaviour
     private Vector3 lastPosition;
 
     private NPCLineOfSight state;
+    //Future Clean Implementation - Hiding Spots With Wall Checking
     public Transform[] hidingSpots;
     Transform randomHidingSpot;
     public int hidingTime;
@@ -36,6 +37,7 @@ public class NPCTopDownMovement : MonoBehaviour
 
             if (state.hasSeenBody)
             {
+                //Debug.Log("Ay mamita");
                 // Move to the hiding spot
                 targetPosition = randomHidingSpot.position;
                 direction = targetPosition - (Vector2)transform.position;
@@ -43,6 +45,7 @@ public class NPCTopDownMovement : MonoBehaviour
             }
             else
             {
+                //Debug.Log("Tamo Piola");
                 // Move to the next waypoint
                 targetPosition = waypoints[currentWaypoint].position;
                 direction = targetPosition - (Vector2)transform.position;

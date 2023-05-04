@@ -7,7 +7,12 @@ using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     [SerializeField] private GameObject PausePanel;
+    [SerializeField] private GameObject OptionsPanel;
+    [SerializeField] private GameObject CreditsPanel;
+
     private bool isPaused;
+    private bool isOptionsActive;
+    private bool isCreditsActive = false;
 
     void Start()
     {
@@ -39,6 +44,13 @@ public class PauseManager : MonoBehaviour
 
     }
 
+    public void Credits()
+    {
+        CreditsPanel.SetActive(true);
+        PausePanel.SetActive(false);
+        isCreditsActive = true;
+    }
+
     public void PauseGame()
     {
         isPaused = true;
@@ -56,6 +68,29 @@ public class PauseManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Debug.Log("Renaudar");
+    }
+
+    public void OptionsButton()
+    {
+        OptionsPanel.SetActive(true);
+        PausePanel.SetActive(false);
+        isOptionsActive = true;
+    }
+
+    public void GoBack()
+    {
+        if (isOptionsActive == true)
+        {
+            OptionsPanel.SetActive(false);
+            PausePanel.SetActive(true);
+            isOptionsActive = false;
+        }
+        else if (isCreditsActive == true)
+        {
+            CreditsPanel.SetActive(false);
+            PausePanel.SetActive(true);
+            isCreditsActive = false;
+        }
     }
 
     public void GoToMenu()

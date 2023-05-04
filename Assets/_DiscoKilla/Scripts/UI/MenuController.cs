@@ -63,6 +63,7 @@ public class MenuController : MonoBehaviour
             isCreditsActive = false;
         }
     }
+
     public void LoadFirstLevel()
     {
         SceneManager.LoadScene(levelName);

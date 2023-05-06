@@ -1,7 +1,25 @@
 fileFormatVersion: 2
-guid: 0c89b4a3320f0144386af39041c85507
+guid: 061b63d975d324c42b7fe3f99bb7ff23
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: player_idle_0
+  - first:
+      213: 21300002
+    second: player_idle_1
+  - first:
+      213: 21300004
+    second: blob_shadow
+  - first:
+      213: 21300006
+    second: player_walk_0
+  - first:
+      213: 21300008
+    second: player_walk_2
+  - first:
+      213: 21300010
+    second: player_walk_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,7 +65,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 36
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -62,7 +80,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -75,176 +93,235 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
-    buildTarget: Server
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC_G_RightWalk_0
+      name: player_idle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 27
+        y: 80
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46041855, y: 0.28224492}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aee440cc3f3aa3f42a51e7d40a450329
-      internalID: 628317139
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_G_RightWalk_1
+      name: player_idle_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 59
+        y: 84
+        width: 22
+        height: 27
+      alignment: 9
+      pivot: {x: 0.36586553, y: 0.18645562}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3f3899bc8eaef940b1904e0ec49f9db
-      internalID: 912693731
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_G_RightWalk_2
+      name: blob_shadow
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 48
-        height: 64
+        x: 9
+        y: 85
+        width: 12
+        height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2887dc2879284840b9085279063aa96
-      internalID: -219388249
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_G_RightWalk_3
+      name: player_walk_0
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 28
+        y: 51
+        width: 29
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3805595, y: 0.192533}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4750c0e2deabfe42bff2e9a8122fa41
-      internalID: 1601478615
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_G_RightWalk_4
+      name: player_walk_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 56
+        y: 52
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.404478, y: 0.159481}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac933e913973300479fd8570898a02b3
-      internalID: 1670253722
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_G_RightWalk_5
+      name: player_walk_4
       rect:
         serializedVersion: 2
-        x: 240
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 80
+        y: 51
+        width: 21
+        height: 27
+      alignment: 9
+      pivot: {x: 0.39973378, y: 0.22874464}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73dfcb80b9b6ac44fb5e691262ed6f72
-      internalID: 1940383941
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline: []
+    outline:
+    - - {x: -25, y: -14}
+      - {x: -22, y: -13}
+      - {x: -22, y: -10}
+      - {x: -25, y: -9}
+      - {x: -27, y: -11}
+    - - {x: -29, y: 15}
+      - {x: -34, y: 7}
+      - {x: -34, y: -7}
+      - {x: -31, y: -9}
+      - {x: -12, y: -9}
+      - {x: -12, y: 13}
+      - {x: -19, y: 15}
+    - - {x: -1, y: 16}
+      - {x: -8, y: 7}
+      - {x: -8, y: 3}
+      - {x: -7, y: 1}
+      - {x: 1, y: -9}
+      - {x: 36, y: -9}
+      - {x: 36, y: 7}
+      - {x: 29, y: 16}
+    - - {x: -54, y: 27}
+      - {x: -57, y: 24}
+      - {x: -57, y: 22}
+      - {x: -54, y: 19}
+      - {x: -44, y: 19}
+      - {x: -41, y: 22}
+      - {x: -41, y: 24}
+      - {x: -44, y: 27}
+    - - {x: -18, y: 50}
+      - {x: -29, y: 50}
+      - {x: -35, y: 40}
+      - {x: -35, y: 25}
+      - {x: -31, y: 23}
+      - {x: -14, y: 23}
+      - {x: -12, y: 30}
+      - {x: -12, y: 46}
+      - {x: -14, y: 49}
+    - - {x: 19, y: 40}
+      - {x: 13, y: 49}
+      - {x: 2, y: 49}
+      - {x: -5, y: 47}
+      - {x: -7, y: 40}
+      - {x: -7, y: 32}
+      - {x: 1, y: 23}
+      - {x: 10, y: 23}
+      - {x: 17, y: 30}
+      - {x: 19, y: 35}
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -252,12 +329,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NPC_G_RightWalk_3: 1601478615
-      NPC_G_RightWalk_2: -219388249
-      NPC_G_RightWalk_4: 1670253722
-      NPC_G_RightWalk_5: 1940383941
-      NPC_G_RightWalk_0: 628317139
-      NPC_G_RightWalk_1: 912693731
+      player_walk_4: 21300010
+      player_idle_1: 21300002
+      player_walk_2: 21300008
+      blob_shadow: 21300004
+      player_walk_0: 21300006
+      player_idle_0: 21300000
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

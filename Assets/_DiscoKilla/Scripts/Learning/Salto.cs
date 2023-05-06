@@ -30,7 +30,7 @@ public class Salto : MonoBehaviour
     {
         Detector_Plataforma();
         //enElaire = bola.gameObject.GetComponent<AnalizarSuelo>().suelo;
-        if (Input.GetKeyDown("space") && enElaire == true)
+        if (Input.GetKeyDown("space")) //&& enElaire == true)
         {
             Debug.Log(saltoDistancia);
             rb2d.AddForce(Vector2.up * saltoDistancia, ForceMode2D.Impulse);
@@ -48,11 +48,13 @@ public class Salto : MonoBehaviour
             rb2d.velocity = new Vector2(direction * speed, rb2d.velocity.y);
         }
 
+        Debug.Log("Salta");
 
     }
 
     bool CheckCollision
     {
+        
         get
         {
             hit = Physics2D.Raycast(transform.position + v3, transform.up * -1, distance, layer);

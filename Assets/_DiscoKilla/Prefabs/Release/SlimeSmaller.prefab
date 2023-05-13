@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5355195390165027271}
   - component: {fileID: 8165703644721116585}
   - component: {fileID: 710456073254108714}
+  - component: {fileID: -75095724854455514}
   m_Layer: 0
   m_Name: SlimeSmaller
   m_TagString: Enemy
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d4c6c1b8ad72242b7a3720ec17b6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialForce: {x: 0, y: 0}
+  initialForce: {x: -2, y: 5}
   rb: {fileID: 5355195390165027264, guid: 534c59cbad0ae8d4bb3ddbe5dc5909a7, type: 3}
   nextBall: {fileID: 5355195390165027270, guid: 534c59cbad0ae8d4bb3ddbe5dc5909a7, type: 3}
 --- !u!61 &710456073254108714
@@ -166,3 +167,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-75095724854455514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5355195390165027270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521c5b59af4b3be43bc43e3f631390f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

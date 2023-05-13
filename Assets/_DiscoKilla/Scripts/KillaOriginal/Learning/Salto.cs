@@ -10,6 +10,7 @@ public class Salto : MonoBehaviour
     private float direction;
     public float speed;
     private bool enElaire;
+    private BulletSpawn bulletSpawn;
     #region ModoPro
     RaycastHit2D hit;
     public Vector3 v3;
@@ -20,7 +21,7 @@ public class Salto : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        
+        bulletSpawn = GetComponent<BulletSpawn>();
 
         
     }
@@ -36,6 +37,10 @@ public class Salto : MonoBehaviour
             rb2d.AddForce(Vector2.up * saltoDistancia, ForceMode2D.Impulse);
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            bulletSpawn.SpawnBullet();
+        }
 
         direction = Input.GetAxis("Horizontal");
         if (direction > 0)
@@ -47,8 +52,6 @@ public class Salto : MonoBehaviour
         {
             rb2d.velocity = new Vector2(direction * speed, rb2d.velocity.y);
         }
-
-        Debug.Log("Salta");
 
     }
 

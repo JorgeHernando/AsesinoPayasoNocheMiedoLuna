@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.092865944, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -385,15 +385,15 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.16666667
+    x: 0.1875
     y: 0
-    width: 0.6666667
+    width: 0.625
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 2.40625
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -627,7 +627,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.0066616, y: -53.951}
+  m_AnchoredPosition: {x: 0.0066616, y: -401}
   m_SizeDelta: {x: 644, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1049440925
@@ -696,9 +696,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'JHD CORPORATION
-
-    ALL VICTOR''S RESERVED
+  m_text: 'RETRY?
 
 '
   m_isRightToLeft: 0
@@ -948,7 +946,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PRESS START (SPACE)
+  m_text: RETRY! (SPACE)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 58c042be1b955474fa0bd1114bdfd093, type: 2}
   m_sharedMaterial: {fileID: 8545531785451754378, guid: 58c042be1b955474fa0bd1114bdfd093, type: 2}
@@ -1014,7 +1012,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1760924507
@@ -1205,7 +1203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: INSERT COIN TO PLAY (I)
+  m_text: INSERT COIN TO RETRY (I)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 58c042be1b955474fa0bd1114bdfd093, type: 2}
   m_sharedMaterial: {fileID: 8545531785451754378, guid: 58c042be1b955474fa0bd1114bdfd093, type: 2}
@@ -1214,8 +1212,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278452303
-  m_fontColor: {r: 0.31132078, g: 0, b: 0.015232087, a: 1}
+    rgba: 4278191505
+  m_fontColor: {r: 0.5686275, g: 0.018886613, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

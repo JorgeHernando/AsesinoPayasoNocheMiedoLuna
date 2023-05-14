@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Salto : MonoBehaviour
+public class MoveAndShoot : MonoBehaviour
 {
 
     Rigidbody2D rb2d;
+    [SerializeField] string LoseScene;
     public float saltoDistancia;
     private float direction;
     public float speed;
     private bool enElaire;
     private BulletSpawn bulletSpawn;
+    [SerializeField] int coolDown;
+    private Animator animator;
+
+    public bool canDie;
+    bool facingRight = true;
     #region ModoPro
     RaycastHit2D hit;
     public Vector3 v3;
@@ -22,7 +29,7 @@ public class Salto : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         bulletSpawn = GetComponent<BulletSpawn>();
-
+        animator = GetComponent<Animator>();
         
     }
 
@@ -30,32 +37,53 @@ public class Salto : MonoBehaviour
     void Update()
     {
         Detector_Plataforma();
-        //enElaire = bola.gameObject.GetComponent<AnalizarSuelo>().suelo;
-        if (Input.GetKeyDown("space")) //&& enElaire == true)
-        {
-            Debug.Log(saltoDistancia);
-            rb2d.AddForce(Vector2.up * saltoDistancia, ForceMode2D.Impulse);
-        }
 
         if (Input.GetMouseButtonDown(0))
         {
-            bulletSpawn.SpawnBullet();
+            ShootIfCan();
         }
 
         direction = Input.GetAxis("Horizontal");
-        if (direction > 0)
-        {
-            rb2d.velocity =new Vector2(direction*speed, rb2d.velocity.y);
-        }
+    }
 
-        if (direction < 0)
-        {
-            rb2d.velocity = new Vector2(direction * speed, rb2d.velocity.y);
-        }
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        animator.SetFloat("Speed", Mathf.Abs(direction));
+
+        //		rigi.AddForce (new Vector2 (0, 700f));
+        rb2d.velocity = new Vector2(direction * speed, rb2d.velocity.y);
+
+        if (direction > 0 && !facingRight)
+            Flip();
+        else if (direction < 0 && facingRight)
+            Flip();
+    }
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
 
     }
 
-    bool CheckCollision
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.collider.tag == "Enemy" && canDie == true)
+        {
+            Debug.Log("Game Over!");
+            SceneManager.LoadScene(LoseScene);
+        }
+    }
+
+    void ShootIfCan()
+    {
+
+        bulletSpawn.SpawnBullet();
+    }
+
+    public bool CheckCollision
     {
         
         get

@@ -9,7 +9,6 @@ public class DivisiondeBola : MonoBehaviour
 
     void Start()
     {
-        rb.AddForce(initialForce, ForceMode2D.Impulse);
         slime = GetComponent<Slime>();
     }
 
@@ -17,15 +16,24 @@ public class DivisiondeBola : MonoBehaviour
     {
         if (nextBall != null)
         {
-            GameObject BolaA = Instantiate(nextBall, rb.position + Vector2.right / 4f, Quaternion.identity);
-            GameObject BolaB = Instantiate(nextBall, rb.position + Vector2.left / 4f, Quaternion.identity);
+            GameObject BolaA = Instantiate(nextBall, transform.position + Vector3.right * 1.1f, Quaternion.identity);
+            GameObject BolaB = Instantiate(nextBall, transform.position + Vector3.left * 1.1f, Quaternion.identity);
 
-            if(nextBall.GetComponent<DivisiondeBola>() != null)
+            if (nextBall.GetComponent<DivisiondeBola>() != null)
             {
-                //This Probably Bugs
+                BolaA.GetComponent<DivisiondeBola>().initialForce = new Vector2(4f, 10f);
+                BolaA.GetComponent<Rigidbody2D>().AddForce(BolaA.GetComponent<DivisiondeBola>().initialForce, ForceMode2D.Impulse);
+                BolaB.GetComponent<DivisiondeBola>().initialForce = new Vector2(-4f, 10f);
+                BolaB.GetComponent<Rigidbody2D>().AddForce(BolaB.GetComponent<DivisiondeBola>().initialForce, ForceMode2D.Impulse);
+                
                 slime.DestroyMe();
-                nextBall.GetComponent<DivisiondeBola>().initialForce = new Vector2(2f, 5f);
-                nextBall.GetComponent<DivisiondeBola>().initialForce = new Vector2(-2f, 5f);
+            }
+            else if(nextBall.GetComponent<LastSlime>() != null)
+            {
+                BolaA.GetComponent<LastSlime>().initialForce = new Vector2(2f, 5f);
+                BolaB.GetComponent<LastSlime>().initialForce = new Vector2(-2f, 5f);
+                
+                slime.DestroyMe();
             }
         }
     }

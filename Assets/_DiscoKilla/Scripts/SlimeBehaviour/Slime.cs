@@ -9,6 +9,7 @@ public class Slime : MonoBehaviour
 
     public void DestroyMe()
     {
+        Debug.Log("Patata");
         OnSlimeDeath?.Invoke();
         Destroy(gameObject);
     }

@@ -11,7 +11,7 @@ public class BulletSpawn : MonoBehaviour
         if (prefabBullet != null)
         {
             GameObject bulletPrefab = Instantiate(prefabBullet, this.transform.position + new Vector3(0,1,0), Quaternion.identity);
-            Destroy(bulletPrefab, 10);
+            Destroy(bulletPrefab, 5);
             //prefabParticles
         }
     }

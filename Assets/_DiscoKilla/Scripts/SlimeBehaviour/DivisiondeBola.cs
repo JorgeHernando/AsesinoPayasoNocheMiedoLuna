@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DivisiondeBola : MonoBehaviour
 {
+    [SerializeField] GameObject prefabParticles;
     public Vector2 initialForce;
     public Rigidbody2D rb;
     private Slime slime;
@@ -12,7 +13,7 @@ public class DivisiondeBola : MonoBehaviour
         slime = GetComponent<Slime>();
     }
 
-    public void SpawnObject()
+public void SpawnObject()
     {
         if (nextBall != null)
         {
@@ -25,15 +26,25 @@ public class DivisiondeBola : MonoBehaviour
                 BolaA.GetComponent<Rigidbody2D>().AddForce(BolaA.GetComponent<DivisiondeBola>().initialForce, ForceMode2D.Impulse);
                 BolaB.GetComponent<DivisiondeBola>().initialForce = new Vector2(-4f, 10f);
                 BolaB.GetComponent<Rigidbody2D>().AddForce(BolaB.GetComponent<DivisiondeBola>().initialForce, ForceMode2D.Impulse);
-                
+
+                if (prefabParticles != null)
+                {
+                    GameObject explosionSlime = Instantiate(prefabParticles, this.transform.position, Quaternion.identity);
+                    Destroy(explosionSlime, 5f);
+                }
                 slime.DestroyMe();
+
             }
             else if(nextBall.GetComponent<LastSlime>() != null)
             {
                 BolaA.GetComponent<LastSlime>().initialForce = new Vector2(2f, 5f);
                 BolaB.GetComponent<LastSlime>().initialForce = new Vector2(-2f, 5f);
-                
-                slime.DestroyMe();
+                if (prefabParticles != null)
+                {
+                    GameObject explosionSlime = Instantiate(prefabParticles, this.transform.position, Quaternion.identity);
+                    Destroy(explosionSlime, 5f);
+                    slime.DestroyMe();
+                }
             }
         }
     }

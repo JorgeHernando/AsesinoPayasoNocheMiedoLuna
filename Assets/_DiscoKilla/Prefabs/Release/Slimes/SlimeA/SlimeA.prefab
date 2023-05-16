@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 5355195390165027265}
   - component: {fileID: 5355195390165027264}
   - component: {fileID: 5355195390165027271}
-  - component: {fileID: 8165703644721116585}
-  - component: {fileID: 710456073254108714}
-  - component: {fileID: -75095724854455514}
-  - component: {fileID: -3783394168046098270}
+  - component: {fileID: 492762663}
+  - component: {fileID: 492762664}
+  - component: {fileID: 1062141005}
+  - component: {fileID: 6718998252466418662}
   m_Layer: 0
-  m_Name: SlimeSmaller
+  m_Name: SlimeA
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 5355195390165027270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.808507, y: 0.808507, z: 0.808507}
+  m_LocalScale: {x: 2.9878018, y: 2.9878018, z: 2.9878018}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.7647059, b: 0.15765546, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 334fe164f0c6bdc47b02790604c2ac27, type: 3}
+  m_Color: {r: 1, g: 0.3066038, b: 0.3066038, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -120,14 +120,14 @@ CircleCollider2D:
   m_GameObject: {fileID: 5355195390165027270}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 0e51a42b85f6d204baaf10e9165a290b, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.03631688}
   serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &8165703644721116585
+  m_Radius: 0.4212448
+--- !u!114 &492762663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,10 +139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d4c6c1b8ad72242b7a3720ec17b6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialForce: {x: -20, y: 50}
-  rb: {fileID: 5355195390165027264, guid: 534c59cbad0ae8d4bb3ddbe5dc5909a7, type: 3}
-  nextBall: {fileID: 5355195390165027270, guid: 534c59cbad0ae8d4bb3ddbe5dc5909a7, type: 3}
---- !u!61 &710456073254108714
+  prefabParticles: {fileID: 5987629752399326399, guid: c8ac01b8e856dfa42adf4eb5bac379eb, type: 3}
+  initialForce: {x: -2, y: 5}
+  rb: {fileID: 5355195390165027264, guid: d2de2c5378a4a5f448ced6e65f53522d, type: 3}
+  nextBall: {fileID: 5355195390165027270, guid: 1532eb3959886cd4495025a60a0e0473, type: 3}
+--- !u!61 &492762664
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,7 +156,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0014527142, y: 0.037769556}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -166,9 +167,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.84601647, y: 0.86054325}
   m_EdgeRadius: 0
---- !u!114 &-75095724854455514
+--- !u!114 &1062141005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521c5b59af4b3be43bc43e3f631390f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-3783394168046098270
+--- !u!114 &6718998252466418662
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -13,7 +13,7 @@ public class BulletSpawn : MonoBehaviour
     {
         if( Time.time > firerate)
         {
-            nextfire = Time.time + firerate;
+            firerate = Time.time + nextfire;
             Debug.Log(nextfire);
             GameObject bulletPrefab = Instantiate(prefabBullet, this.transform.position + posBullet, Quaternion.identity);
             Destroy(bulletPrefab, 5);

@@ -3221,7 +3221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoseScene: LoseScene
   saltoDistancia: 4
-  speed: 5
+  speed: 7
   coolDown: 0
   canDie: 0
   v3: {x: 0, y: 1, z: 0}
@@ -3242,7 +3242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firerate: 0
-  nextfire: 1
+  nextfire: 0.5
   prefabBullet: {fileID: 1302137123493019035, guid: c8009134c52d08a48aac247092f69ac2, type: 3}
   posBullet: {x: 0, y: 1, z: 0}
 --- !u!114 &950058904

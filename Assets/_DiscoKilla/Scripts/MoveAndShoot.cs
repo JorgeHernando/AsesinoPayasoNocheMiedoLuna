@@ -11,7 +11,9 @@ public class MoveAndShoot : MonoBehaviour
     public float saltoDistancia;
     private float direction;
     public float speed;
+
     private bool enElaire;
+
     private BulletSpawn bulletSpawn;
     [SerializeField] int coolDown;
     private Animator animator;
@@ -24,13 +26,13 @@ public class MoveAndShoot : MonoBehaviour
     public LayerMask layer;
     public float distance;
     #endregion
+
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         bulletSpawn = GetComponent<BulletSpawn>();
         animator = GetComponent<Animator>();
-        
     }
 
     // Update is called once per frame
@@ -49,11 +51,11 @@ public class MoveAndShoot : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        animator.SetFloat("Speed", Mathf.Abs(direction));
+        //animator.SetFloat("Speed", Mathf.Abs(direction));
 
-        //		rigi.AddForce (new Vector2 (0, 700f));
         rb2d.velocity = new Vector2(direction * speed, rb2d.velocity.y);
 
+        // Check for walls in the movement direction and adjust movement if necessary
         if (direction > 0 && !facingRight)
             Flip();
         else if (direction < 0 && facingRight)
@@ -65,7 +67,6 @@ public class MoveAndShoot : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
-
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -79,13 +80,11 @@ public class MoveAndShoot : MonoBehaviour
 
     void ShootIfCan()
     {
-
         bulletSpawn.SpawnBullet();
     }
 
     public bool CheckCollision
     {
-        
         get
         {
             hit = Physics2D.Raycast(transform.position + v3, transform.up * -1, distance, layer);
@@ -109,8 +108,4 @@ public class MoveAndShoot : MonoBehaviour
     {
         Gizmos.DrawRay(transform.position + v3, transform.up * -1 * distance);
     }
-
-
-
-
 }

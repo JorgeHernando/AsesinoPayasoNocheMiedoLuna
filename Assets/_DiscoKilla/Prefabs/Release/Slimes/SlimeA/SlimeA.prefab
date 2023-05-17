@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 492762664}
   - component: {fileID: 1062141005}
   - component: {fileID: 6718998252466418662}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SlimeA
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 0e51a42b85f6d204baaf10e9165a290b, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -120,7 +120,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5355195390165027270}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0e51a42b85f6d204baaf10e9165a290b, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -181,6 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521c5b59af4b3be43bc43e3f631390f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appliedTorqueForce: 4
+  baseTorqueForce: 50
 --- !u!114 &6718998252466418662
 MonoBehaviour:
   m_ObjectHideFlags: 0

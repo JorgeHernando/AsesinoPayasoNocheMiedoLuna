@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 710456073254108714}
   - component: {fileID: -75095724854455514}
   - component: {fileID: 6172765480995694130}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SlimeMediumA
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -181,6 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521c5b59af4b3be43bc43e3f631390f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appliedTorqueForce: 10
+  baseTorqueForce: 40
 --- !u!114 &6172765480995694130
 MonoBehaviour:
   m_ObjectHideFlags: 0

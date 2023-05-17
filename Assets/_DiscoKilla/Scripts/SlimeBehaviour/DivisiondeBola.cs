@@ -13,7 +13,7 @@ public class DivisiondeBola : MonoBehaviour
         slime = GetComponent<Slime>();
     }
 
-public void SpawnObject()
+    public void SpawnObject()
     {
         if (nextBall != null)
         {

@@ -32,10 +32,4 @@ public class Slime : MonoBehaviour
         // Rotate the ball around its center
         rb.AddTorque(baseTorqueForce, ForceMode2D.Force);
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("A Rotar");
-       // rb.AddTorque(appliedTorqueForce, ForceMode2D.Impulse); // Apply a torque force to the circle object
-    }
 }

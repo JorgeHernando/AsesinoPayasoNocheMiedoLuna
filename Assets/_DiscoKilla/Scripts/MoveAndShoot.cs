@@ -20,6 +20,10 @@ public class MoveAndShoot : MonoBehaviour
 
     public bool canDie;
     bool facingRight = true;
+
+    //PowerUps
+    public bool isBulletPowered;
+    public bool canTripleShoot;
     #region ModoPro
     RaycastHit2D hit;
     public Vector3 v3;
@@ -33,6 +37,10 @@ public class MoveAndShoot : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         bulletSpawn = GetComponent<BulletSpawn>();
         animator = GetComponent<Animator>();
+
+        //PowerUps
+        isBulletPowered = false;
+        canTripleShoot = false;
     }
 
     // Update is called once per frame
@@ -80,7 +88,22 @@ public class MoveAndShoot : MonoBehaviour
 
     void ShootIfCan()
     {
-        bulletSpawn.SpawnBullet();
+        if (canTripleShoot == false)
+        {
+            bulletSpawn.canTripleShoot = false;
+            if (!isBulletPowered)
+                bulletSpawn.SpawnBullet();
+            else
+                bulletSpawn.SpawnPoweredBullet();
+        }
+        else if (canTripleShoot == true)
+        {
+            bulletSpawn.canTripleShoot = true;
+            if (!isBulletPowered)
+                bulletSpawn.SpawnBullet();
+            else
+                bulletSpawn.SpawnPoweredBullet();
+        }
     }
 
     public bool CheckCollision

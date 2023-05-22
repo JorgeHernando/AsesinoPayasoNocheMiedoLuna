@@ -59,7 +59,7 @@ public class MoveAndShoot : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //animator.SetFloat("Speed", Mathf.Abs(direction));
+        animator.SetFloat("Speed", Mathf.Abs(direction));
 
         rb2d.velocity = new Vector2(direction * speed, rb2d.velocity.y);
 
@@ -90,6 +90,7 @@ public class MoveAndShoot : MonoBehaviour
     {
         if (canTripleShoot == false)
         {
+            animator.SetTrigger("Shoot");
             bulletSpawn.canTripleShoot = false;
             if (!isBulletPowered)
                 bulletSpawn.SpawnBullet();
@@ -98,6 +99,7 @@ public class MoveAndShoot : MonoBehaviour
         }
         else if (canTripleShoot == true)
         {
+            animator.SetTrigger("Shoot");
             bulletSpawn.canTripleShoot = true;
             if (!isBulletPowered)
                 bulletSpawn.SpawnBullet();

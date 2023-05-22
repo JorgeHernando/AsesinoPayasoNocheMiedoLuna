@@ -26,14 +26,14 @@ public class StairAction : MonoBehaviour
     private void Update()
     {
         direction.y = Input.GetAxisRaw("Vertical");
-        /*if(Mathf.Abs(rb2D.velocity.y) > Mathf.Epsilon)
+        if (Mathf.Abs(rb2D.velocity.y) > Mathf.Epsilon)
         {
             animator.SetFloat("VelocidadY", Mathf.Sign(rb2D.velocity.y));
         }
         else
         {
-            animator.SetFloat("Velocidady", 0);
-        }*/
+            animator.SetFloat("VelocidadY", 0);
+        }
     }
 
     private void FixedUpdate()
@@ -57,7 +57,7 @@ public class StairAction : MonoBehaviour
         }
         if (movement.CheckCollision)
             climbing = false;
-        //animator.SetBool("isClimbing", climbing);
+        animator.SetBool("isClimbing", climbing);
     }
 
 }

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/_DiscoKilla/Scenes/Release/FinalGame/FangMenu.unity
     guid: 9d7a08052bf688044a52a0fcdd4ba81a
   - enabled: 1
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/Tutorial.unity
+    guid: b05bef6a0d0e2fa4b9c1cfc5117ff3bd
+  - enabled: 1
     path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaUno.unity
     guid: 91972788b115c6c48a1b20c1db326119
   - enabled: 1

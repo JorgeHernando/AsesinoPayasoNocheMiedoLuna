@@ -9,6 +9,7 @@ public class PauseManager : MonoBehaviour
     [SerializeField] private GameObject PausePanel;
     [SerializeField] private GameObject OptionsPanel;
     [SerializeField] private GameObject CreditsPanel;
+    [SerializeField] private string DesiredScene;
 
     private bool isPaused;
     private bool isOptionsActive;
@@ -96,7 +97,7 @@ public class PauseManager : MonoBehaviour
     public void GoToMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(DesiredScene);
         Time.timeScale = 1f;
     }
 }

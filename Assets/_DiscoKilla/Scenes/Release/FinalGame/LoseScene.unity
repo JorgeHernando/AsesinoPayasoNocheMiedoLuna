@@ -385,10 +385,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.35058594
+    x: 0.1875
     y: 0
     width: 0.625
-    height: 0.453125
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278191505
-  m_fontColor: {r: 0.5686275, g: 0.018886613, b: 0, a: 1}
+  m_fontColor: {r: 0.5686275, g: 0.5449986, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

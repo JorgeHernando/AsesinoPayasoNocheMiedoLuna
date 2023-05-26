@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class HabilidadBala1 : MonoBehaviour
 {
+    public static event Action OnPowerPickup;
+
     private int PowerUpTimer = 2;
     private SpriteRenderer sprite;
 
@@ -19,6 +21,7 @@ public class HabilidadBala1 : MonoBehaviour
         {
             Debug.Log("PowerBala");
             sprite.enabled = false;
+            OnPowerPickup?.Invoke();
             StartCoroutine(PowerUpSequence(collision.gameObject.GetComponent<MoveAndShoot>()));
         }
     }

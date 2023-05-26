@@ -11,4 +11,9 @@ public class ScoreSlimeManager: MonoBehaviour
     {
         m_Object.text = $"Score: {slimeValue.ToString()} ";
     }
+
+    public void AddPowerUpScore(int powerUpValue)
+    {
+        m_Object.text = $"Score: {powerUpValue.ToString()} ";
+    }
 }

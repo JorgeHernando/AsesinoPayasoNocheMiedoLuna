@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class HabilidadBala4 : MonoBehaviour
 {
+    public static event Action OnPowerPickup;
+
     private int PowerUpTimer = 3;
     private SpriteRenderer sprite;
     private bool hasActivated;
@@ -19,6 +22,7 @@ public class HabilidadBala4 : MonoBehaviour
         {
             Debug.Log("SpeedyBoost");
             sprite.enabled = false;
+            OnPowerPickup?.Invoke();
             StartCoroutine(PowerUpSequence(collision.gameObject.GetComponent<MoveAndShoot>()));
         }
     }

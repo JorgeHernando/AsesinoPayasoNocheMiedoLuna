@@ -14,6 +14,12 @@ public class UIManager : MonoBehaviour
     private bool canPlay;
 
     [SerializeField]
+    private GameObject TitlePanel;
+
+    [SerializeField]
+    private GameObject LevelPanel;
+
+    [SerializeField]
     private GameObject _insertCoinPanel;
 
     [SerializeField]
@@ -24,6 +30,18 @@ public class UIManager : MonoBehaviour
     
     [SerializeField]
     private float FlickeringTimer;
+
+    //[Header] LevelNames
+    #region Level Names
+    [SerializeField]
+    private string LevelTutorial;
+    [SerializeField]
+    private string LevelOne;
+    [SerializeField]
+    private string LevelTwo;
+    [SerializeField]
+    private string LevelThree;
+    #endregion
 
     void Start()
     {
@@ -46,14 +64,29 @@ public class UIManager : MonoBehaviour
             case 0:
                 InsertCoinSequence();
                 if (Input.GetKeyDown(KeyCode.Space) && canPlay)
-                    LoadInGameScene();
+                {
+                    TitlePanel.SetActive(false);
+                    LevelPanel.SetActive(true);
+                    canPlay = false;
+                }
                 break;
         }
     }
-
-    private void LoadInGameScene()
+    public void LoadLevelTutorial()
     {
-        SceneManager.LoadScene(nextSceneToLoad);
+        SceneManager.LoadScene(LevelTutorial);
+    }
+    public void LoadLevelOne()
+    {
+        SceneManager.LoadScene(LevelOne);
+    }
+    public void LoadLevelTwo()
+    {
+        SceneManager.LoadScene(LevelTwo);
+    }
+    public void LoadLevelThree()
+    {
+        SceneManager.LoadScene(LevelThree);
     }
 
     void InsertCoinSequence()

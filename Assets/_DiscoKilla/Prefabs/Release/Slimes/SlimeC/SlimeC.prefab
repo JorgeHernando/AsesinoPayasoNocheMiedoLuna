@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 5355195390165027270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.9878018, y: 2.9878018, z: 2.9878018}
+  m_LocalScale: {x: 3.8956106, y: 3.8956106, z: 3.8956106}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 334fe164f0c6bdc47b02790604c2ac27, type: 3}
-  m_Color: {r: 1, g: 0.3066038, b: 0.3066038, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 56b2710964eab4644b105c385ccf80e2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
   prefabParticles: {fileID: 5987629752399326399, guid: c8ac01b8e856dfa42adf4eb5bac379eb, type: 3}
   initialForce: {x: -2, y: 5}
   rb: {fileID: 5355195390165027264, guid: d2de2c5378a4a5f448ced6e65f53522d, type: 3}
-  nextBall: {fileID: 5355195390165027270, guid: 1532eb3959886cd4495025a60a0e0473, type: 3}
+  nextBall: {fileID: 5355195390165027270, guid: 677468c2028930343b2f95d3fadac2c5, type: 3}
 --- !u!61 &492762664
 BoxCollider2D:
   m_ObjectHideFlags: 0

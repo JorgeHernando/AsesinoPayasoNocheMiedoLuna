@@ -13,17 +13,32 @@ EditorBuildSettings:
     guid: b05bef6a0d0e2fa4b9c1cfc5117ff3bd
   - enabled: 1
     path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaUno.unity
-    guid: 91972788b115c6c48a1b20c1db326119
+    guid: e0190668ccdbb7d4caf590c5ececa406
+  - enabled: 1
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaUnoA.unity
+    guid: fab45c5ac9e9fdc48bbe8a2a41a18883
   - enabled: 1
     path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaDos.unity
     guid: dddcb9536fc38ab4cb62dc00f82f292a
   - enabled: 1
-    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaTres.unity
-    guid: 1cfd7154c9168104badac8f6f4dd5c79
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaDosA.unity
+    guid: 8d2d75135d0f1c4418ada694e25bbb0c
   - enabled: 1
-    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/LoseScene.unity
-    guid: 107fd69db1fa98a41953dbf4e5e84e21
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaUnoB.unity
+    guid: 91972788b115c6c48a1b20c1db326119
+  - enabled: 1
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaTres.unity
+    guid: 9f89e7a4b46965646a458a8158366b93
+  - enabled: 1
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaTresA.unity
+    guid: 22a6ea26a1dbb8c478c629807af05631
+  - enabled: 1
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaTresB.unity
+    guid: 1cfd7154c9168104badac8f6f4dd5c79
   - enabled: 1
     path: Assets/_DiscoKilla/Scenes/Release/FinalGame/VictoryScene.unity
     guid: 9d09ad49641b7584fb11510e3e6b3c91
+  - enabled: 1
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/LoseScene.unity
+    guid: 107fd69db1fa98a41953dbf4e5e84e21
   m_configObjects: {}

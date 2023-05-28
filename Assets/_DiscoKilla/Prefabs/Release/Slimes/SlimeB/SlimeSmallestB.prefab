@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521c5b59af4b3be43bc43e3f631390f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SlimeSFX: {fileID: 7610335496732272380, guid: 64ab10b6f6cdb5e4eb538bee81cdd0ec, type: 3}
   appliedTorqueForce: 10
   baseTorqueForce: 2
 --- !u!114 &-7410864224248603999

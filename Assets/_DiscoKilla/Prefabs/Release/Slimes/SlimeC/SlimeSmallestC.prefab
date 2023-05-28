@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718009595164aa94da60f74a3e39a3e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabParticles: {fileID: 5987629752399326399, guid: b3708597f2f210547b9ad781fb10fbcd, type: 3}
+  prefabParticles: {fileID: 5987629752399326399, guid: 93b4ecba98afdfc4380562424c29b720, type: 3}
   initialForce: {x: -2, y: 5}
 --- !u!114 &2651425114039184001
 MonoBehaviour:
@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521c5b59af4b3be43bc43e3f631390f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SlimeSFX: {fileID: 7610335496732272380, guid: 64ab10b6f6cdb5e4eb538bee81cdd0ec, type: 3}
   appliedTorqueForce: 10
   baseTorqueForce: 2
 --- !u!114 &-7410864224248603999

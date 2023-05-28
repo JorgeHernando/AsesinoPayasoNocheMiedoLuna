@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2377122052589008141}
-  - component: {fileID: 2377122052589008138}
+  - component: {fileID: 4033778676979468820}
   m_Layer: 0
   m_Name: PauseManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2377122052589008138
+--- !u!114 &4033778676979468820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,7 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2377122052589008140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7de057fd62fd2f4296f11ffcfbe5f2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 255282e6c2f99ec47ae932b5b86c2804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PausePanel: {fileID: 0}
+  CreditsPanel: {fileID: 0}
+  DesiredScene: FangMenu

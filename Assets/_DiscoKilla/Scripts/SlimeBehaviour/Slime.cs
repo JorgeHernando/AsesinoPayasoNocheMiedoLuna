@@ -6,6 +6,7 @@ using System;
 public class Slime : MonoBehaviour
 {
     public static event Action OnSlimeDeath;
+    public GameObject SlimeSFX;
 
     private Rigidbody2D rb;
 
@@ -23,6 +24,8 @@ public class Slime : MonoBehaviour
 
     public void DestroyMe()
     {
+        GameObject explosionSlime = Instantiate(SlimeSFX, this.transform.position, Quaternion.identity);
+        Destroy(explosionSlime, 2f);
         Debug.Log("Patata");
         OnSlimeDeath?.Invoke();
         Destroy(gameObject);

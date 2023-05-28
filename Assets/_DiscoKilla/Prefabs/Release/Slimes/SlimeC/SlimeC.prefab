@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d4c6c1b8ad72242b7a3720ec17b6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabParticles: {fileID: 5987629752399326399, guid: c8ac01b8e856dfa42adf4eb5bac379eb, type: 3}
+  prefabParticles: {fileID: 5987629752399326399, guid: 50eb5b44e8e45d249823731c23a20913, type: 3}
   initialForce: {x: -2, y: 5}
   rb: {fileID: 5355195390165027264, guid: d2de2c5378a4a5f448ced6e65f53522d, type: 3}
   nextBall: {fileID: 5355195390165027270, guid: 677468c2028930343b2f95d3fadac2c5, type: 3}
@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521c5b59af4b3be43bc43e3f631390f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SlimeSFX: {fileID: 7610335496732272380, guid: 64ab10b6f6cdb5e4eb538bee81cdd0ec, type: 3}
   appliedTorqueForce: 10
   baseTorqueForce: 2
 --- !u!114 &6718998252466418662

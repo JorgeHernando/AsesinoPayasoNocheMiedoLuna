@@ -24,6 +24,9 @@ public class MoveAndShoot : MonoBehaviour
     //PowerUps
     public bool isBulletPowered;
     public bool canTripleShoot;
+
+    public GameObject deathSFX;
+    public int GameOverTimer;
     #region ModoPro
     RaycastHit2D hit;
     public Vector3 v3;
@@ -82,7 +85,7 @@ public class MoveAndShoot : MonoBehaviour
         if (col.collider.tag == "Enemy" && canDie == true)
         {
             Debug.Log("Game Over!");
-            SceneManager.LoadScene(LoseScene);
+            StartCoroutine(DiesSequence());
         }
     }
 
@@ -132,5 +135,14 @@ public class MoveAndShoot : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawRay(transform.position + v3, transform.up * -1 * distance);
+    }
+
+    public IEnumerator DiesSequence()
+    {
+        animator.SetTrigger("Dies");
+        GameObject explosionSlime = Instantiate(deathSFX, this.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(GameOverTimer);
+        Destroy(explosionSlime, 3f);
+        SceneManager.LoadScene(LoseScene);
     }
 }

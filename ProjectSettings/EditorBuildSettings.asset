@@ -18,14 +18,17 @@ EditorBuildSettings:
     path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaUnoA.unity
     guid: fab45c5ac9e9fdc48bbe8a2a41a18883
   - enabled: 1
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaUnoB.unity
+    guid: 91972788b115c6c48a1b20c1db326119
+  - enabled: 1
     path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaDos.unity
     guid: dddcb9536fc38ab4cb62dc00f82f292a
   - enabled: 1
     path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaDosA.unity
     guid: 8d2d75135d0f1c4418ada694e25bbb0c
   - enabled: 1
-    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaUnoB.unity
-    guid: 91972788b115c6c48a1b20c1db326119
+    path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaDosB.unity
+    guid: 1052464b92e28214e9c52cc359543626
   - enabled: 1
     path: Assets/_DiscoKilla/Scenes/Release/FinalGame/MapaTres.unity
     guid: 9f89e7a4b46965646a458a8158366b93

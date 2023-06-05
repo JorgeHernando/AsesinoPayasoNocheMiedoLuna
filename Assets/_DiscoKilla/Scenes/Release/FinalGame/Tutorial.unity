@@ -820,10 +820,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.52734375
     y: 0
-    width: 0.625
-    height: 0.625
+    width: 0.35026044
+    height: 0.35026044
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -1577,10 +1577,6 @@ PrefabInstance:
     - target: {fileID: 7284831785416458334, guid: 5c9c81270f04174458b4849409ae4e88, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7284831785416458335, guid: 5c9c81270f04174458b4849409ae4e88, type: 3}
-      propertyPath: GameOverTimer
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c9c81270f04174458b4849409ae4e88, type: 3}

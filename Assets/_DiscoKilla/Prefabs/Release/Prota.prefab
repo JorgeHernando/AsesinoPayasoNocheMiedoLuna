@@ -177,6 +177,7 @@ MonoBehaviour:
   isBulletPowered: 0
   canTripleShoot: 0
   deathSFX: {fileID: 3937307110205607204, guid: e0f150b01f439754191ae9653a4dc0bf, type: 3}
+  GameOverTimer: 0.8
   v3: {x: 0, y: 1, z: 0}
   layer:
     serializedVersion: 2

@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
 
     private bool canPlay;
 
+    private bool toOptions;
+
     [SerializeField]
     private GameObject TitlePanel;
 
@@ -23,15 +25,23 @@ public class UIManager : MonoBehaviour
     private GameObject _insertCoinPanel;
 
     [SerializeField]
+    private GameObject _optionsPressPanel;
+
+    [SerializeField]
     private GameObject _startGamePanel;
 
     [SerializeField]
     TextMeshProUGUI _insertCoinText;
-    
+
+    [SerializeField]
+    TextMeshProUGUI _optionsText;
+
     [SerializeField]
     private float FlickeringTimer;
 
     //[Header] LevelNames
+    [SerializeField]
+    private string LevelOptions;
     #region Level Names
     [SerializeField]
     private string LevelTutorial;
@@ -48,6 +58,7 @@ public class UIManager : MonoBehaviour
         StartCoroutine(FlickeringInsertCoinPanel());
         insertedCoins = 0;
         nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
+        toOptions = false;
     }
 
     // Update is called once per frame
@@ -67,8 +78,14 @@ public class UIManager : MonoBehaviour
                 {
                     TitlePanel.SetActive(false);
                     LevelPanel.SetActive(true);
+                    Debug.Log("Titilando");
+                    StartCoroutine(FlickeringOptionsPanel());
                     canPlay = false;
+                    toOptions = true;
+                    
+                    
                 }
+                GoToOptions();
                 break;
         }
     }
@@ -89,6 +106,11 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(LevelThree);
     }
 
+    public void LoadLevelOptions()
+    {
+        SceneManager.LoadScene(LevelOptions);
+    }
+
     void InsertCoinSequence()
     {
         if (Input.GetKeyDown(KeyCode.I) && insertedCoins <= 99)
@@ -104,6 +126,15 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    void GoToOptions()
+    {
+        if (Input.GetKeyDown(KeyCode.K) && toOptions == true)
+        {
+            Debug.Log("To Main Menu");
+            LoadLevelOptions();
+        }
+    }
+
     IEnumerator FlickeringInsertCoinPanel()
     {
         while (true)
@@ -113,6 +144,18 @@ public class UIManager : MonoBehaviour
                 _insertCoinPanel.gameObject.SetActive(false);
             else
                 _insertCoinPanel.gameObject.SetActive(true);
+            yield return new WaitForSecondsRealtime(FlickeringTimer);
+        }
+    }
+    IEnumerator FlickeringOptionsPanel()
+    {
+        while (true)
+        {
+            Debug.Log(FlickeringTimer);
+            if (_optionsPressPanel.activeInHierarchy)
+                _optionsPressPanel.gameObject.SetActive(false);
+            else
+                _optionsPressPanel.gameObject.SetActive(true);
             yield return new WaitForSecondsRealtime(FlickeringTimer);
         }
     }

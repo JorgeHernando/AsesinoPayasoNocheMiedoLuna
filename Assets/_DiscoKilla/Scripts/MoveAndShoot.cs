@@ -26,7 +26,7 @@ public class MoveAndShoot : MonoBehaviour
     public bool canTripleShoot;
 
     public GameObject deathSFX;
-    public int GameOverTimer;
+    public float GameOverTimer;
     #region ModoPro
     RaycastHit2D hit;
     public Vector3 v3;

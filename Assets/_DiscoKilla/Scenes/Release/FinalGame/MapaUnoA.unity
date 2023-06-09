@@ -1178,6 +1178,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeSmallestA
       objectReference: {fileID: 0}
+    - target: {fileID: 6994714115706117722, guid: 534c59cbad0ae8d4bb3ddbe5dc5909a7, type: 3}
+      propertyPath: initialForce.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994714115706117722, guid: 534c59cbad0ae8d4bb3ddbe5dc5909a7, type: 3}
+      propertyPath: initialForce.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 534c59cbad0ae8d4bb3ddbe5dc5909a7, type: 3}
 --- !u!1 &424551909

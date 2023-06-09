@@ -20,6 +20,8 @@ public class Slime : MonoBehaviour
             appliedTorqueForce = 10;
         if (baseTorqueForce == 0)
             baseTorqueForce = 2;
+        rb.AddTorque(50f, ForceMode2D.Force);
+
     }
 
     public void DestroyMe()
@@ -30,9 +32,10 @@ public class Slime : MonoBehaviour
         OnSlimeDeath?.Invoke();
         Destroy(gameObject);
     }
+    /*
     private void FixedUpdate()
     {
         // Rotate the ball around its center
         rb.AddTorque(baseTorqueForce, ForceMode2D.Force);
-    }
+    }*/
 }

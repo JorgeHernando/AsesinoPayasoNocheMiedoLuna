@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -1971009465579326260}
   - component: {fileID: 286396309096309912}
   - component: {fileID: 4613824893497159678}
+  - component: {fileID: -6116688520002417}
   m_Layer: 0
   m_Name: BulletLevel1Right
   m_TagString: Untagged
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -328291331
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6b517d1936010ea469679b488a73386c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -246,6 +247,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-6116688520002417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302137123493019035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c62b98620af1d54eac150c33e44f942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5122698187940371993
 GameObject:
   m_ObjectHideFlags: 0

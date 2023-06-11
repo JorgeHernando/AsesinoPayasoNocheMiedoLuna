@@ -151,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c844186f405b9b4e957b60dd05a1952
-      internalID: 1030039699
+      spriteID: 509c1909126849c4395b128d7b5762a8
+      internalID: 1662149984
       vertices: []
       indices: 
       edges: []
@@ -172,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dfeef47712df1147848224d0fe4e2fa
-      internalID: -242964870
+      spriteID: 8c169a8867cbc6543af2a0c5281247a7
+      internalID: -1023538653
       vertices: []
       indices: 
       edges: []
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05893c7758578134999edc297c2f8f7f
-      internalID: 1020197167
+      spriteID: 443e9bcba98b07a4fb808727c88d3c20
+      internalID: 1920088985
       vertices: []
       indices: 
       edges: []
@@ -214,8 +214,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 183f981f789d6284a85163a808bb947b
-      internalID: 1614722152
+      spriteID: 61741bd4762d8354389f19d97f637bfc
+      internalID: -63634663
       vertices: []
       indices: 
       edges: []
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74a280c2f47d407498e04173437d4848
-      internalID: -1859591203
+      spriteID: 47f44f929dc349f429e96050e213fb97
+      internalID: 2139375137
       vertices: []
       indices: 
       edges: []
@@ -256,8 +256,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 984279f2d3a69084e8aa93d88511fd66
-      internalID: 1816219830
+      spriteID: 054da90445b85ac46b36a29795547afb
+      internalID: 49942147
       vertices: []
       indices: 
       edges: []
@@ -277,8 +277,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0176c84aaf316674ca4e2fbbd98cd24b
-      internalID: -2115160661
+      spriteID: aafa8bb54f8079d4dbba3c56b1feba16
+      internalID: 1574554396
       vertices: []
       indices: 
       edges: []
@@ -298,8 +298,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b56b6a4243d01747a563e706dbd4f1c
-      internalID: -1840795975
+      spriteID: 5dd26864328386d4d80a7dc0473f2481
+      internalID: 1964511855
       vertices: []
       indices: 
       edges: []
@@ -319,8 +319,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e54f6cb7e576ff341a41062448b3adb5
-      internalID: -557791167
+      spriteID: 1e381d18a66f73d4eac8c6cf56509f8f
+      internalID: 1080685716
       vertices: []
       indices: 
       edges: []
@@ -340,8 +340,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 652525c04fd6f4a48882e45961ab79ae
-      internalID: -102806476
+      spriteID: c1913e6caf954524f999d74072722c99
+      internalID: -2118438230
       vertices: []
       indices: 
       edges: []
@@ -361,8 +361,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 619c6b5bbf622c94289d93f4d380a0d8
-      internalID: -1874318854
+      spriteID: 41ec517f6309c594dbc47d10f1715e9c
+      internalID: -237455276
       vertices: []
       indices: 
       edges: []
@@ -378,18 +378,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UILevelSelect_8: -1840795975
-      UILevelSelect_4: 1614722152
-      UILevelSelect_10: -102806476
-      UILevelSelect_11: -1874318854
-      UILevelSelect_3: 1020197167
-      UILevelSelect_5: -1859591203
-      UILevelSelect_7: -2115160661
-      UILevelSelect_6: 1816219830
-      UILevelSelect_9: -557791167
+      UILevelSelect_8: 1964511855
+      UILevelSelect_4: -63634663
+      UILevelSelect_10: -2118438230
+      UILevelSelect_11: -237455276
+      UILevelSelect_3: 1920088985
+      UILevelSelect_5: 2139375137
+      UILevelSelect_7: 1574554396
+      UILevelSelect_6: 49942147
+      UILevelSelect_9: 1080685716
       UILevelSelect_0: -689677188
-      UILevelSelect_2: -242964870
-      UILevelSelect_1: 1030039699
+      UILevelSelect_2: -1023538653
+      UILevelSelect_1: 1662149984
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

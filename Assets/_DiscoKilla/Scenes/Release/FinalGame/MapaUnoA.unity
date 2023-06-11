@@ -1198,6 +1198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 424551911}
   - component: {fileID: 424551910}
+  - component: {fileID: 424551912}
   m_Layer: 0
   m_Name: MusicLevelUno
   m_TagString: Untagged
@@ -1316,6 +1317,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &424551912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424551909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 165bed9065047ca459bafc3fa40a6e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &502351883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,8 +1820,8 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: 0.20800781
+    y: -0.3216146
     width: 1
     height: 1
   near clip plane: 0.3

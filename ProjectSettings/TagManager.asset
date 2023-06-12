@@ -9,9 +9,9 @@ TagManager:
   - NPCChecking
   - DetectionZone
   - Enemy
-  - Potion
   - Ground
   - ObjetoDestruible
+  - MusicController
   layers:
   - Default
   - TransparentFX

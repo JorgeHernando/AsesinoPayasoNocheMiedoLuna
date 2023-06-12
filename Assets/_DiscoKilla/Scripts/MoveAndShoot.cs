@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MoveAndShoot : MonoBehaviour
 {
-
+    private GameObject _musicController;
     Rigidbody2D rb2d;
     [SerializeField] string LoseScene;
     public float saltoDistancia;
@@ -19,6 +19,7 @@ public class MoveAndShoot : MonoBehaviour
     private Animator animator;
 
     public bool canDie;
+    private bool isDying;
     bool facingRight = true;
 
     //PowerUps
@@ -37,6 +38,7 @@ public class MoveAndShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _musicController = GameObject.FindGameObjectWithTag("MusicController");
         rb2d = GetComponent<Rigidbody2D>();
         bulletSpawn = GetComponent<BulletSpawn>();
         animator = GetComponent<Animator>();
@@ -44,6 +46,7 @@ public class MoveAndShoot : MonoBehaviour
         //PowerUps
         isBulletPowered = false;
         canTripleShoot = false;
+        isDying = false;
     }
 
     // Update is called once per frame
@@ -51,26 +54,30 @@ public class MoveAndShoot : MonoBehaviour
     {
         Detector_Plataforma();
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isDying)
         {
             ShootIfCan();
         }
 
-        direction = Input.GetAxis("Horizontal");
+        if (!isDying)
+            direction = Input.GetAxis("Horizontal");
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        animator.SetFloat("Speed", Mathf.Abs(direction));
+        if (!isDying)
+        {
+            animator.SetFloat("Speed", Mathf.Abs(direction));
 
-        rb2d.velocity = new Vector2(direction * speed, rb2d.velocity.y);
+            rb2d.velocity = new Vector2(direction * speed, rb2d.velocity.y);
 
-        // Check for walls in the movement direction and adjust movement if necessary
-        if (direction > 0 && !facingRight)
-            Flip();
-        else if (direction < 0 && facingRight)
-            Flip();
+            // Check for walls in the movement direction and adjust movement if necessary
+            if (direction > 0 && !facingRight)
+                Flip();
+            else if (direction < 0 && facingRight)
+                Flip();
+        }
     }
     void Flip()
     {
@@ -139,6 +146,9 @@ public class MoveAndShoot : MonoBehaviour
 
     public IEnumerator DiesSequence()
     {
+        isDying = true;
+        if (_musicController != null)
+            _musicController.SetActive(false);
         animator.SetTrigger("Dies");
         GameObject explosionSlime = Instantiate(deathSFX, this.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(GameOverTimer);

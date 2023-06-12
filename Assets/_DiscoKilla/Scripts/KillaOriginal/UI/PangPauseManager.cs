@@ -9,7 +9,7 @@ public class PangPauseManager : MonoBehaviour
     [SerializeField] private GameObject PausePanel;
     [SerializeField] private GameObject CreditsPanel;
     [SerializeField] private string DesiredScene;
-
+    [SerializeField] private GameObject MusicGame;
     private bool isPaused;
     private bool isCreditsActive = false;
 
@@ -46,6 +46,7 @@ public class PangPauseManager : MonoBehaviour
     {
         isPaused = true;
         PausePanel.SetActive(true);
+        MusicGame.SetActive(false);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -56,6 +57,7 @@ public class PangPauseManager : MonoBehaviour
         Debug.Log("Renaudar");
         isPaused = false;
         PausePanel.SetActive(false);
+        MusicGame.SetActive(true);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

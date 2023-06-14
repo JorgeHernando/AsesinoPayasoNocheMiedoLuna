@@ -9,10 +9,11 @@ public class HabilidadBala1 : MonoBehaviour
 
     private int PowerUpTimer = 2;
     private SpriteRenderer sprite;
-
+    private AudioSource SFXPowers;
     private void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();    
+        sprite = GetComponent<SpriteRenderer>();
+        SFXPowers = GetComponent<AudioSource>();
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,6 +28,7 @@ public class HabilidadBala1 : MonoBehaviour
     }
     public IEnumerator PowerUpSequence(MoveAndShoot player)
     {
+        SFXPowers.Play();
         ActivatePowerUp(player);
         yield return new WaitForSeconds(PowerUpTimer);
         DeactivatePowerUp(player);

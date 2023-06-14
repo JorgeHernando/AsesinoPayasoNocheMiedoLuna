@@ -45,13 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUps:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5612076613979281064, guid: cf347970f7d74874a9c6d46e1003c794, type: 3}
+  - {fileID: 3357426281016050122, guid: d8c149f576163cd44a2f25d5f9df8d87, type: 3}
+  - {fileID: 5629003808394917061, guid: 9aa773edaed963a44a980e0fbc09dab8, type: 3}
+  - {fileID: 3681795684434753182, guid: a7c9d38c51115b445b80c20831ca7b82, type: 3}
   maxX: 9
   maxY: 0
   minX: -9
   minY: 8
-  spawnWait: 7
-  spawnTime: 2
+  spawnWait: 3
+  spawnTime: 1

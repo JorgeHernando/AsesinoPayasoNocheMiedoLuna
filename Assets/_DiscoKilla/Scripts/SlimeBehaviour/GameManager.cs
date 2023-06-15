@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] ScoreSlimeManager scoreText;
     [SerializeField] TextMeshProUGUI m_Object;
 
-    int scoreCount = 0;
+    int scoreCount;
 
     private void OnEnable()
     {
